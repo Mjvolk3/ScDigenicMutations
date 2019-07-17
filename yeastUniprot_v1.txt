@@ -1,0 +1,92 @@
+----------------------------------------------------------------------------
+        UniProt - Swiss-Prot Protein Knowledgebase
+        SIB Swiss Institute of Bioinformatics; Geneva, Switzerland
+        European Bioinformatics Institute (EBI); Hinxton, United Kingdom
+        Protein Information Resource (PIR); Washington DC, USA
+----------------------------------------------------------------------------
+
+Description: Yeast (Saccharomyces cerevisiae): entries, gene names and
+             cross-references to SGD
+Name:        yeast.txt
+Release:     2019_06 of 03-Jul-2019
+
+----------------------------------------------------------------------------
+
+This documents lists all the Saccharomyces cerevisiae S288c entries present in
+this release of UniProtKB/Swiss-Prot. 
+
+More information on Saccharomyces cerevisiae, its genome, biology and
+genetics, is available from the following WWW pages:
+
+SGD   : https://www.yeastgenome.org/
+NCBI  : https://www.ncbi.nlm.nih.gov/mapview/map_search.cgi?taxid=4932
+YPM   : http://www.ibgc.u-bordeaux2.fr/YPM/
+
+For each entry we provide the following information:
+
+1) Gene designations
+
+   In this field, we provide  the "primary" gene name (the first one used in
+   the GN line of the relevant Swiss-Prot entry  and  the name used in SGD);
+   all the known synonyms and  the ORF  names  used by the genome sequencing
+   projects.
+
+2) Ordered locus name (OLN)
+
+3) Swiss-Prot primary accession number
+
+4) Swiss-Prot entry name
+
+5) SGD accession number
+
+6) Length of the sequence
+
+   The length of the sequence  (number of amino  acids) listed in  the table
+   is that of  the probable  gene  product  before  any   post-translational
+   processing (removal of initiator methionine, signal sequence, etc.).
+
+7) 3D-structure flag
+
+   If the 3D-structure of a Yeast protein has been solved, the flag "(3)" is
+   present in the table.
+
+8) Chromosome localization
+
+__________________________________________________________________________ ___________________ __________ ___________ __________  ____ ___ __
+Gene designations                                                          OLN                 Swiss-Prot             SGD         Size 3D  CH
+                                                                                               AC         Entry       X-ref.
+__________________________________________________________________________ ___________________ __________ ___________ __________  ____ ___ __
+AAC1                                                                       YMR056C             P04710     ADT1_YEAST  S000004660   309     13
+AAC3                                                                       YBR085W             P18238     ADT3_YEAST  S000000289   307 (3)  2
+AAD10                                                                      YJR155W             P47182     AAD10_YEAST S000003916   288     10
+AAD14                                                                      YNL331C             P42884     AAD14_YEAST S000005275   376     14
+AAD15                                                                      YOL165C             Q08361     AAD15_YEAST S000005525   143     15
+AAD16                                                                      YPL088W             Q02895     AAD16_YEAST S000006009   342     16
+AAD3                                                                       YCR107W             P25612     AAD3_YEAST  S000000704   363      3
+AAD4                                                                       YDL243C             Q07747     AAD4_YEAST  S000002402   329      4
+AAD6                                                                       YFL056C             P43547     AAD6_YEAST  S000001838   212      6
+AAH1                                                                       YNL141W             P53909     ADE_YEAST   S000005085   347     14
+AAP1                                                                       YHR047C             P37898     AAP1_YEAST  S000001089   856      8
+AAR2                                                                       YBL074C             P32357     AAR2_YEAST  S000000170   355 (3)  2
+AAT1                                                                       YKL106W             Q01802     AATM_YEAST  S000001589   451     11
+AAT2; ; ASP5                                                               YLR027C             P23542     AATC_YEAST  S000004017   418 (3) 12
+ABD1                                                                       YBR236C             P32783     MCES_YEAST  S000000440   436 (3)  2
+ABF1; ; BAF1; OBF1; REB2; SBF1                                             YKL112W             P14164     ABF1_YEAST  S000001595   731     11
+ABF2; ; HIM1                                                               YMR072W             Q02486     ABF2_YEAST  S000004676   183 (3) 13
+ABM1                                                                       YJR108W             P47146     ABM1_YEAST  S000003869   123     10
+ABP1                                                                       YCR088W             P15891     ABP1_YEAST  S000000684   592 (3)  3
+ABP140; ; TRM140                                                           YOR239W             Q08641     AB140_YEAST S000005765   628     15
+ABZ1                                                                       YNR033W             P37254     ADCS_YEAST  S000005316   787     14
+ABZ2                                                                       YMR289W             Q03266     PABC_YEAST  S000004902   374 (3) 13
+ACA1                                                                       YER045C             P39970     ACA1_YEAST  S000000847   489      5
+ACB1; ; ACB                                                                YGR037C             P31787     ACBP_YEAST  S000003269    87 (3)  7
+ACC1; ; ABP2; FAS3; MTR7                                                   YNR016C             Q00955     ACAC_YEAST  S000005299  2233 (3) 14
+ACE2                                                                       YLR131C             P21192     ACE2_YEAST  S000004121   770     12
+ACF2; ; ENG2; PCA1                                                         YLR144C             Q12168     ENG2_YEAST  S000004134   779     12
+ACF4                                                                       YJR083C             P47129     ACF4_YEAST  S000003843   309     10
+ACH1                                                                       YBL015W             P32316     ACH1_YEAST  S000000111   526      2
+ACK1                                                                       YDL203C             Q07622     ACK1_YEAST  S000002362   623      4
+ACL4                                                                       YDR161W             Q03771     ACL4_YEAST  S000002568   387      4
+ACM1                                                                       YPL267W             Q08981     ACM1_YEAST  S000006188   209 (3) 16
+ACO1; ; GLU1                                                               YLR304C             P19414     ACON_YEAST  S000004295   778     12
+ACO2                                                                       YJL200C             P39533     ACON2_YEAST S000003736   789     10

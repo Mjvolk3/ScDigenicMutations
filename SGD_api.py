@@ -9,7 +9,7 @@ import requests
 import json
 
 def get_go(gene):
-    # In URL can use act1 of SGID : S000001855
+    #In URL can use act1 of SGID : S000001855
     #For Manual Entry
     #url = SGD_baseurl + '/locus/act1/go_details'
     SGD_baseurl = "https://yeastgenome.org/backend"
@@ -17,36 +17,38 @@ def get_go(gene):
     parameter_lst = parameter.split("/")
     parameter_lst[-2] = gene
     parameter_go = "/".join(parameter_lst)
-    print(parameter_go)
+    #print(parameter_go)
 
     url = SGD_baseurl + parameter_go
     
     response = requests.get(url).json()   
     #"go" dicitonary contains: "go_aspect", "id", "display_name", "go_id"
-    go_id = []
-    go_aspect = []
+    
+    go_temp = []
+    go_tot = []
+
     #checking go term total
-    acc = 0
-    for study in response:
+    for exp in response:
         #print(json.dumps(study["go"], indent = 2))
         #could edit off the GO prefix here
-        go_id.append(study["go"]["go_id"])
-        go_aspect.append(study["go"]["display_name"])
-        acc = acc + 1
-    go_id_short = (list(dict.fromkeys(go_id)))
-    go_aspect_short = (list(dict.fromkeys(go_aspect)))
-    print(json.dumps(go_id_short, indent = 1))
-    print(json.dumps(go_aspect_short, indent = 1))
-    print(len(go_id_short), len(go_aspect_short))
-    
-    #change return depending on what is needed/more useful
-    return (go_id_short) 
+        go_temp.append(exp["go"]["go_aspect"]) 
+        go_temp.append(exp["go"]["go_id"])
+        go_temp.append(exp["go"]["display_name"])   
+            
+        if go_temp not in go_tot:
+            go_tot.append(go_temp)
+            
+        go_temp = []
+        
+    return (go_tot) 
 
-#why is the next line used?
+#why is the next line used? -- FROM ORIGINAL .py
 #if __name__ == '__main__':    
     #print_act1_go()
-gene = "act1"
-get_go(gene)
-get_go("ino1")
+
+#Uncomment to see example
+#gene = "act1"
+#get_go(gene)
+#print(json.dumps(get_go("aft2"), indent = 2))
 
 
